@@ -1,0 +1,91 @@
+BODY
+{font-family: verdana, tahoma, arial, sans-serif;
+font-size: 10pt;
+margin: 0px;
+margin-left: 3px;
+margin-right: 3px;
+padding: 0px;}
+
+P
+{padding-top: 0px;
+margin: 0px;
+	width: 153px;
+}
+
+H1
+{font-size: 15pt;
+font-weight: bold;
+padding-top: 15px;
+margin: 0;}
+
+table.navbar
+{border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	font-size: 12pt;
+	margin: 0px;
+	padding: 0px; 
+	font-weight: bold;
+	width: 915px;
+	height: 26px;
+}
+
+table.menu
+{font-size: 12pt;
+margin: 0px;
+padding: 0px;
+font-weight: bold;}
+
+td.menuNormal
+{padding: 0px;
+color: black;
+font-weight: bold;
+vertical-align: top;
+background-color: white;}
+
+td.menuHover
+{
+filter: alpha(opacity=55);	-moz-opacity: 0.55;	KhtmlOpacity : 0.55; opacity: 0.55;
+padding: 0px;
+color: black;
+font-weight: bold;
+vertical-align: top;
+/*remove the following line for drop-down menu with images*/
+background-color: WHITE;}
+
+div.menuNormal
+{display: none;
+position: static;}
+
+div.menuHover
+{border: 1px solid SOLID GREEN;
+background-color: white;
+display: inline;
+position: absolute;}
+
+a.menuitem:link
+{text-decoration: none;
+color: black;
+background-color: white;
+display: block;}
+
+a.menuitem:visited
+{
+	filter: alpha(opacity=5);	-moz-opacity: 0.75;	KhtmlOpacity : 0.5; opacity: 0.75;
+
+text-decoration: none;
+color: black;
+background-color: white;
+display: block;}
+
+a.menuitem:hover
+{text-decoration: none;
+color: black;
+background-color: #FA8910;
+display: block;}
+
+a.menuitem:active
+{text-decoration: none;
+color: black;
+background-color: #FA8910;
+display: block;}

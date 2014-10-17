@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>SASPFUW Online</title>
+<link rel="stylesheet" type="text/css" href="css/Style.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/Menubig.css" />
+<link rel="stylesheet" type="text/css" href="css/Menusmall.css" />
+<link rel="stylesheet" type="text/css" href="themes/1/js-image-slider.css" />
+<script type="text/javascript" src="themes/1/js-image-slider.js"></script>
+
+<script type="text/javascript" src="css/modernizr-1.6.min.js"></script>
+
+<script src="jquery.min.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" src="java.js"></script>
+<script type="text/javascript">
+
+window.onload = start;
+
+</script>
+
+</head>
+
+<body onload="showrate()">
+
+<div id="bodycontener">
+	<div id="contener">
+		<div id="header">
+			<div id="headerleft">
+								
+						<div class="Logo"><img src="images/05.jpg" alt="" height="90" width="198"/></div>
+						<!--<div id="logoname"><p><img src="images/Titlelogo.png" width="250" height="50"/></p></div>-->
+			</div>
+			
+			<div id="headerright">
+		
+				<div id="menu">
+						
+				</div>
+				
+				
+				<div id="contuctheder">
+				<p><span style="color:yellow">WELCOME &nbsp &nbsp</span><span style="color:#FFFFFF">ADMIN</span></p>
+				
+				</div>
+				
+				<div class="clear"></div>
+					
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="menubig">
+				<div id='cssmenu'>
+							<ul>
+							   <li class='active'><a href='Admin.html'><span>Home</span></a></li>
+							   <li><a href='LABOUR_DETAILS.html'><span>LABOUR DETAILS</span></a></li>
+							   <li><a href='CHANGE_RATE_PLAN.html'><span>CHANGE OF RATE PLAN</span></a></li>
+							   <li><a href='AC_DETAILS.html'><span>AC DETAILS</span></a></li>
+							   <li><a href='Report.html'><span>REPORT / NIRDESH 4</span></a></li>
+							   <li><a href='CHANGE_PASSWORD.html'><span>CHANGE PASSWORD</span></a></li>
+							   <li class='last'><a href='#' onclick="logout();"><span style="color:yellow">LOGOUT</span></a></li>
+							</ul>
+							</div>						
+		</div>
+		
+		<div class="clear"></div>
+		<div id="allcontenar">	
+			
+					<div id="Labourdet">
+							<div id="Labouradvboking">
+					<div class="Labourservicename">CHANGE OF RATE PLAN</div>
+					<div class="Labourboking">
+							<div class="LabourAuthorize">
+								<p></p>
+								<label><b>Curent Rate&nbsp :</b></label>
+								 <input id="Text1" type="text" readonly="readonly" value="" style="background-color:silver" />
+								 <p></p>
+								 <label><b>New Rate&nbsp &nbsp :</b></label>
+
+      							   <input id="Text2" type="text" />
+								<p></p>
+								<label><b>New Date &nbsp &nbsp:</b></label>
+								<input type="date" id="dt"  />
+								<p></p>
+								<br/>
+								<div class="clear"></div>
+								
+								<div style="float:left;padding-left:50px;margin-right:50px;"><input id="Button1" onclick="insertnewrate()"  type="button" value="UPDATE" style="width:90px;height:30px;float:left" /></div>
+								<div style="float:left"> <input id="Reset1" type="reset" value="RESET"   style="width:90px;height:30px;float:left" /></div>
+								
+								
+							</div>
+						
+							<p style="float:right;padding-right:30px;">* This Means Mandotary</p>
+					</div>
+
+				</div>			
+
+							
+							
+			
+			</div>
+			
+		</div>
+		
+		<div class="clear"></div>
+		
+		
+		<!--<div id="servicecontenar">
+						
+				<div id="advboking">
+					<div class="servicename">Authorize Advertisement Booking Center</div>
+					<div class="boking">
+							<div class="Authorize">
+								<img src="images/Ei-samay-jpg.jpg"style="width:170px;height:90px;"/>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="Authorize" style="margin-top:5px;">
+								<img src="images/Times.jpg"style="width:170px;height:90px;"/>
+							</div>
+
+					</div>
+
+				</div>			
+
+				<div id="curboking">
+					<div class="servicename">Authorize Courier Booking Center</div>
+					<div class="boking">
+					
+							<div class="Authorize">
+								<img src="images/SS-OVER-NTG (1).jpg"style="width:170px;height:90px;"/>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="Authorize" style="margin-top:5px;">
+								<img src="images/zodiac-logo1.png"style="width:170px;height:90px;"/>
+							</div>
+
+
+					</div>
+
+				</div>				
+
+				<div id="hub">
+					<div id="servicenamelistname">Internet Hub</div>
+					<div id="servicelist">
+					<div style="margin-left:30px;">
+					               	<ul id="u">
+					                	<li>Internet browsing</li>
+					                    <li>Print out (<span style="color:#FF0000">Colour </span> &nbsp & &nbsp<span style="color:black">B/W </span> ) </li>
+					                    <li>Scan &nbsp &nbsp(<span style="color:#FF0000">Colour </span> &nbsp & &nbsp<span style="color:black">B/W </span>) </li>
+					                     <li> Xerox		  </li>
+
+					                     <li>Lamination 			  </li>
+					                    <li>Spiral Binding 		  </li>
+					                    <li>CESC  & BSNL Bill Payment (Instant) 		  </li>
+					                     <li> Airtel , Voda , Tata Bill Payment(Instant)				  </li>
+
+					                    <li>All DTH Recharge Done Here			  </li>
+					                   <li>All Mobile Top-Up Done Here </li>
+					                </ul>
+			         		</div>
+
+					
+					</div>
+
+				</div>
+				
+			
+
+				
+		</div>-->
+		
+				
+		<div class="clear"></div>
+		<div id="footer">
+		<div style="width:400px;float:left"> Copyright © &nbsp &nbsp<a href="#" style="text-decoration:none"><span style="color:#660066">example.com</span> </a>&nbsp &nbsp 2013 All rights reserved.</div><div style="width:270px;float:left"></div><div style="width:300px;float:right"> Devloped By <a href="http://webtechlink.in/" target="_blank" style="text-decoration:none"><span style="color:#660066"> Web Tech Link</span></a></div>
+		</div>
+		<div class="clear"></div>
+
+	</div>
+
+</div>
+
+</body>
+
+</html>
